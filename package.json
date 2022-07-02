@@ -1,0 +1,38 @@
+{
+  "name": "express-api-starter",
+  "version": "1.0.0",
+  "description": "Express js API with MONGO db.",
+  "main": "./src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon --es-module-specifier-resolution=node -r dotenv/config . dotenv_config_path=./.env/.local  ./src/server.js",
+    "start:staging": "nodemon --experimental-modules --es-module-specifier-resolution=node ./src/server.js",
+    "start:prod": " nodemon --experimental-modules --es-module-specifier-resolution=node ./src/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "nodemon src/index.js'"
+  },
+  "author": "Basil Satti",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "express-async-errors": "^3.1.1",
+    "express-validation": "^4.1.0",
+    "express-validator": "^6.14.2",
+    "fs": "0.0.1-security",
+    "googleapis": "^104.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "log-symbols": "^5.1.0",
+    "mongoose": "^6.4.2",
+    "morgan": "^1.10.0",
+    "morgan-json": "^1.1.0",
+    "nodemon": "^2.0.18",
+    "path": "^0.12.7",
+    "url": "^0.11.0",
+    "util": "^0.12.4",
+    "winston": "^3.8.1"
+  }
+}
